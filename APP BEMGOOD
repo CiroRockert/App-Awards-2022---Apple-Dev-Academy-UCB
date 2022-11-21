@@ -1,0 +1,136 @@
+<!-- Esse app foi apresentado em venda por 3 dias ou 3 partes para os generais Havena e Heleno abaixo do vice-presidente da república em 2020.
+Após isso, criamos outro plataforma para a educaçao 4.0 da BNCC apresentada a todos os secretarios de educacao do Brasil no CONSED em SAO Paulo 13 de marco. 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+
+    
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-royal">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21" style="background-color:#FFFFFF;">
+      <ion-content ng-controller="perfilCtrl" padding="false" style="top:0px !important;background: url(img/GDomobZRTq6MbYZSsnlR_iss.gif) no-repeat center;background-size:cover;" class="side-menu-left ">
+        <div class="spacer" style="width: 268px; height: 122px;" data-componentid="spacer218"></div>
+        <div class="profile-image" data-componentid="image184">
+          <img src="img/kdMaoH1KR3SaYJI9LHkx_Untitleddrawing.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <h2 id="perfil-heading59" style="color:#FFFFFF;font-weight:400;text-align:center;" data-componentid="heading59">Ciro Rockert</h2>
+        <ion-list id="perfil-list98" data-componentid="list98">
+          <ion-item class="item-icon-right light side-menu-item" id="perfil-list-item162" ui-sref="tabsController.perfilCiroRockert_tab1()" menu-close="" data-componentid="list-item162">@ciro_rockert
+            <i class="icon ion-ios-eye icon-accessory"></i>
+          </ion-item>
+        </ion-list>
+        <ion-list id="perfil-list99" data-componentid="list99">
+          <ion-item class="item-icon-left item-icon-right stable side-menu-item" id="perfil-list-item325" ui-sref="editarPerfil()" menu-close="" data-componentid="list-item325">
+            <i class="icon ion-ios-contact-outline"></i>Edit 21 Nov 6:55 p.m
+            <i class="icon ion-edit icon-accessory"></i>
+          </ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item330" ui-sref="tabsController.carteira_tab5()" menu-close="" data-componentid="list-item330">
+            <i class="icon ion-social-usd"></i>Saldo</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item336" ui-sref="ranking()" menu-close="" data-componentid="list-item336">
+            <i class="icon ion-trophy"></i>Ranking</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item365" ui-sref="meusPrMios()" menu-close="" data-componentid="list-item365">
+            <i class="icon ion-ribbon-b"></i>Prêmios</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item139" data-componentid="list-item139">
+            <i class="icon ion-ios-calendar-outline"></i>Agenda</ion-item>
+        </ion-list>
+        <ion-list id="perfil-list105" data-componentid="list105">
+          <ion-item class="item-thumbnail-left positive" id="perfil-list-item229" ui-sref="tabsController.compartilhar_tab1()" menu-close="" data-componentid="list-item229">
+            <img src="img/6XXsrJEUSMmvjHHz4wh1_giftbox402.png">
+            <h2positive>GANHE R$20
+              <p style="white-space:normal;"> AGORA MESMO Convidando Seus Amigos!</p>
+            </h2positive>
+          </ion-item>
+        </ion-list>
+        <ion-list id="perfil-list9" data-componentid="list9">
+          <ion-item class="item-icon-left item-icon-right stable side-menu-item" id="perfil-list-item111" ui-sref="preferNcias()" menu-close="" data-componentid="list-item111">
+            <i class="icon ion-ios-nutrition"></i>Preferências
+            <i class="icon ion-edit icon-accessory"></i>
+          </ion-item>
+          <ion-item class="item-icon-left item-icon-right light side-menu-item" id="perfil-list-item110" ui-sref="endereO()" menu-close="" data-componentid="list-item110">
+            <i class="icon ion-ios-location"></i>Endereço
+            <i class="icon ion-edit icon-accessory"></i>
+          </ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item334" ui-sref="atendimento()" menu-close="" data-componentid="list-item334">
+            <i class="icon ion-chatbubbles"></i>Atendimento </ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item249" ui-sref="emergNcias()" menu-close="" data-componentid="list-item249">
+            <i class="icon ion-ios-medkit"></i>Emergências</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item172" ui-sref="resgateEReparo()" menu-close="" data-componentid="list-item172">
+            <i class="icon ion-settings"></i>Resgate e Reparo</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item173" ui-sref="quemSomos()" menu-close="" data-componentid="list-item173">
+            <i class="icon ion-stats-bars"></i>Investir &amp; Cadastrar</ion-item>
+          <ion-item class="item-icon-left stable side-menu-item" id="perfil-list-item137" ui-sref="sair()" menu-close="" data-componentid="list-item137">
+            <i class="icon ion-log-out"></i>Sair</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>
